@@ -1,0 +1,88 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+<title>Poll Page..Your poll</title>
+</head>
+
+<body bgcolor="#ADDCDC">
+
+<table border="1" width="100%" bordercolor="#000080" cellspacing="0">
+  <tr>
+    <td width="22%" valign="top">Use the poll below to test the page.<br>
+    Your Poll Counts</td>
+    <td width="78%"><h1>POLL Page</h1>
+    </td>
+  </tr>
+  <tr>
+    <td width="22%" valign="top" align="left" bgcolor="#008000" nowrap><font color="#FFFF00"><strong>Poll
+    Of the Day!</strong></font></td>
+    <td width="78%" valign="top" align="left" rowspan="2"><font color="#FF0000">by <a
+    href="mailto:vishnoor@inf.com">Vishnoo Rath</a> and <a
+    href="mailto:krishna_rath@hotmail.com">Krishna Rath</a></font><p>Poll.exe ie the WinCGI
+    file generates the results of a Poll.<br>
+    many a times you might have seen polls on websites and liked it. So, theres the<br>
+    source code for it<br>
+    <br>
+    You need to run this from the HTML page itself..which is enclosed in the zip file Poll.zip<br>
+    Note the follwing files should be present in the poll.zip<br>
+    1. poll.html<br>
+    2. poll.bas<br>
+    3. cgi32.bas<br>
+    4. readme.txt<br>
+    5. poll.exe<br>
+    6. some extra VB files<br>
+    <br>
+    In WinCGI, writing a CGI script is very easy. All you have to do is to include<br>
+    the cgi32.bas file with your project. then write another module which<br>
+    will contain your source code. the poll.bas shall clear most of the<br>
+    doubts regarding the basics of WinCGI<br>
+    note to run WinCGI you need a server that runs on Win9x or NT, IIS4<br>
+    You cannot run these scripts on an UNIX server like tripod.com ( where I have<br>
+    my unofficial home page and my scripts donot run. I have to abandon the site, and build a
+    new one!!)<br>
+    <br>
+    In case you want to test the program you can use a free server like Sambar server( that I
+    use).<br>
+    To run and install sambar (www.sambar.com) please read the help file provided along the
+    program).<br>
+    Incase of any doubts...or if your programs are not working fine then<br>
+    contact me at krishna_rath@hotmail.com. or krath@rediffmail.com....Incase my hotmail
+    account is hacked and you donot recieve an reply by a week.<br>
+    This script can run on any win server ....but I tested it on Sambar cause it is free!!<br>
+    <br>
+    ************************************************************************<br>
+    <br>
+    If you have used WinCGI then skip this part<br>
+    How to run this file<br>
+    First, if you make any changes to the file then complie it to an EXE file.<br>
+    2. place the HTML page( poll.html) on your server folder ( if it is sambar server, then
+    place it in the &quot;path\sambar\docs&quot; folder, where path is the &quot;c:\&quot; or
+    &quot;d:\&quot;<br>
+    3. place the Poll.exe and the Poll.txt file in &quot;path\sambar\cgi-win\&quot; folder, if
+    cgi-bin does not exists then create it<br>
+    4. If your server is not running then start it.<br>
+    5. Open your browser, type in 127.0.0.1\poll.html. The poll.html file should appear. If it
+    does not recheck your configuration<br>
+    6. Click on the Poll button and see the results!!! If you donot see anything or see a
+    &quot;page not found&quot; or a &quot;Error no:500&quot; it means that the poll.exe is not
+    placed correctly.<br>
+    7. If everything goes right please mail me at krishna_rath@hotmail.com or
+    krath@rediffmail.com, ...Incase my hotmail account is hacked and you donot recieve an
+    reply by a week.<br>
+    </td>
+  </tr>
+  <tr>
+    <td width="22%" valign="top" align="left"><strong><font color="#800000"><br>
+    Do you think you can be the richest man in the world??</font></strong><p>&nbsp;</p>
+    <form method="POST" action="/cgi-win/poll.exe">
+      <p><font color="#004000"><input type="radio" checked name="R1" value="V1"><strong>YES</strong></font></p>
+      <p><font color="#004000"><input type="radio" name="R1" value="V2"><strong>no</strong></font></p>
+      <p><font color="#004000"><input type="radio" name="R1" value="V3"><strong>Can't say</strong></font></p>
+      <p><font color="#004000"><input type="submit" name="B1" value="Submit"></font></p>
+    </form>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
